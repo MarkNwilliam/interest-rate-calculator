@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Interest Rate Calculator | Compound Savings Calculator</title>
+    <meta
+      name="description"
+      content="Free online interest rate calculator. Estimate how your initial deposit and monthly contributions grow with compound interest over time."
+    />
+    <meta name="keywords" content="interest rate calculator, compound interest, savings calculator, investment calculator" />
+    <meta name="author" content="Interest Rate Calculator" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="calculator">
+      <h1>Interest Rate Calculator</h1>
+
+      <form id="calculator-form" novalidate>
+        <div class="field">
+          <label for="initial-investment">Initial Investment</label>
+          <input type="number" id="initial-investment" name="initialInvestment" value="10000" min="0" step="0.01" />
+        </div>
+
+        <div class="field">
+          <label for="monthly-contribution">Monthly Contribution</label>
+          <input type="number" id="monthly-contribution" name="monthlyContribution" value="200" min="0" step="0.01" />
+        </div>
+
+        <div class="field">
+          <label for="annual-interest-rate">Annual Interest Rate (%)</label>
+          <input type="number" id="annual-interest-rate" name="annualRate" value="5" min="0" step="0.01" />
+        </div>
+
+        <div class="field">
+          <label for="investment-years">Years</label>
+          <input type="number" id="investment-years" name="years" value="10" min="0" step="1" />
+        </div>
+
+        <button type="submit" id="calculate-button">Calculate</button>
+      </form>
+
+      <section id="results" class="results" aria-live="polite">
+        <h2>Results</h2>
+        <p id="error-message" class="error" hidden></p>
+        <dl>
+          <div class="result-row">
+            <dt>Future Value</dt>
+            <dd id="future-value">-</dd>
+          </div>
+          <div class="result-row">
+            <dt>Total Interest</dt>
+            <dd id="total-interest">-</dd>
+          </div>
+          <div class="result-row">
+            <dt>Total Payments</dt>
+            <dd id="total-payments">-</dd>
+          </div>
+          <div class="result-row">
+            <dt>Monthly Interest Earned</dt>
+            <dd id="monthly-interest">-</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

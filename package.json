@@ -1,0 +1,17 @@
+{
+  "name": "interest-rate-calculator",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jasmine",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Compound interest rate calculator - Jasmine tested and Webpack bundled",
+  "devDependencies": {
+    "jasmine": "^7.0.0",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3"
+  }
+}
