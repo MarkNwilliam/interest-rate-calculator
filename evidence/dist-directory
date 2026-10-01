@@ -1,0 +1,17 @@
+$ npx webpack
+  assets by path *.js 3.45 KiB
+    asset script.js 1.74 KiB [compared for emit] [from: script.js] [copied] [minimized]
+    asset main.js 1.71 KiB [compared for emit] [minimized] (name: main)
+  asset favicon.ico 4.19 KiB [compared for emit] [from: favicon.ico] [copied]
+  asset index.html 2.8 KiB [compared for emit] [from: index.html] [copied] [minimized]
+  asset style.css 1.37 KiB [compared for emit] [from: style.css] [copied] [minimized]
+  ./src/script.js 294 bytes [built] [code generated]
+  ./script.js 4.51 KiB [built] [code generated]
+  webpack 5.111.1 compiled successfully in 540 ms
+
+$ ls dist
+  favicon.ico
+  index.html
+  main.js
+  script.js
+  style.css

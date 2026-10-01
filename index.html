@@ -13,8 +13,23 @@
     <meta name="keywords" content="interest rate calculator, compound interest, savings calculator, investment calculator" />
     <meta name="author" content="Interest Rate Calculator" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Open Graph, so shared links render with a title, description and icon -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Interest Rate Calculator" />
+    <meta
+      property="og:description"
+      content="Free online interest rate calculator. Estimate how your initial deposit and monthly contributions grow with compound interest over time."
+    />
+    <meta property="og:image" content="favicon.ico" />
+    <meta name="twitter:card" content="summary" />
   </head>
 
   <body>
@@ -69,6 +84,8 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <!-- The calculator script. Copied into dist/ alongside this page so the
+         built output stays self-contained, and bundled by webpack as main.js. -->
+    <script src="script.js" defer></script>
   </body>
 </html>

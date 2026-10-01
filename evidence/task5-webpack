@@ -1,5 +1,0 @@
-$ npx webpack
-
-asset main.js 1.75 KiB [compared for emit] [minimized] (name: main)
-./script.js 4.08 KiB [built] [code generated]
-webpack 5.111.1 compiled successfully in 786 ms
